@@ -26,8 +26,7 @@ public class CosFileServiceImpl implements ICosFileService {
     @PostConstruct
     public void init() {
         // 1 初始化用户身份信息(secretId, secretKey)
-       // COSCredentials cred = new BasicCOSCredentials("AKIDoTv9B0wzA7rNgmJMr8B1d2ECwTmrjNo1", "A6pKbeU6VgeOyLUP6aqshIfplTyFI7i6");
-        COSCredentials cred = new BasicCOSCredentials("AKIDvDH5ewrsTowvZ1fNDn8HBpDMIzQbLYLu", "TijV1FEyShhT1LTM0OXTGoBPPAfuzqUt");
+
         // 2 设置bucket的区域, COS地域的简称请参照 https://cloud.tencent.com/document/product/436/6224
         ClientConfig clientConfig = new ClientConfig(new Region("ap-chengdu"));
         // 3 生成cos客户端
